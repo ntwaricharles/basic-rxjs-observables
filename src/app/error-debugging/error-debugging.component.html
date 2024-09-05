@@ -1,0 +1,16 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100  text-gray-800 ">
+  <div class="p-6 bg-white shadow-lg rounded-lg w-96 text-center">
+    <button 
+      (click)="makeRequest()"
+      class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition ease-in-out duration-300"
+    >
+      Make HTTP Request
+    </button>
+    
+    <div class="mt-4">
+      <p *ngIf="loading" class="text-blue-500">Loading...</p>
+      <p *ngIf="result" class="text-green-500 font-semibold">{{ result }}</p>
+      <p *ngIf="error" class="text-red-500 font-semibold">{{ error }}</p>
+    </div>
+  </div>
+</div>

@@ -8,6 +8,7 @@ import { SearchComponent } from './components/search/search.component';
 import { BookSearchComponent } from './components/book-search/book-search.component';
 import { BookListComponent } from './components/book-list/book-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ErrorDebuggingComponent } from './error-debugging/error-debugging.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SearchComponent,
     BookSearchComponent,
     BookListComponent,
+    ErrorDebuggingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
